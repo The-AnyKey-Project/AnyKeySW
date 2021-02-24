@@ -52,6 +52,7 @@
     <Compile Include="GraphicsLibraries\Analysis.cs" />
     <Compile Include="GraphicsLibraries\ColorHelper.cs" />
     <Compile Include="GraphicsLibraries\Effects.cs" />
+    <Compile Include="GraphicsLibraries\FloydSteinberg.cs" />
     <Compile Include="HID\RawHID.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

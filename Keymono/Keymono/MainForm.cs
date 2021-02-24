@@ -49,8 +49,8 @@ namespace Keymono
 
                 pictureBox1.Image = icon;
                 pictureBox2.Image = GenerateImage(GraphicsLibraries.Effects.ConvertToBlackAndWhite(pictureBox1.Image, (float)trackBar1.Value / 10));
+                pictureBox5.Image = GenerateImage(GraphicsLibraries.Effects.ConvertToBlackAndWhite(Dither.Dither.FloydSteinberg((Bitmap)pictureBox1.Image), (float)trackBar1.Value / 10)); 
 
-                
                 pictureBox3.BackColor = color;
                 label1.Text = color.ToString();
 
@@ -86,6 +86,7 @@ namespace Keymono
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             pictureBox2.Image = GenerateImage(GraphicsLibraries.Effects.ConvertToBlackAndWhite(pictureBox1.Image, (float)trackBar1.Value / 10));
+            pictureBox5.Image = GenerateImage(GraphicsLibraries.Effects.ConvertToBlackAndWhite(Dither.Dither.FloydSteinberg((Bitmap)pictureBox1.Image), (float)trackBar1.Value / 10));
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
