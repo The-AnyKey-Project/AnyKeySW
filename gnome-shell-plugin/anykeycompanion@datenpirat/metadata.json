@@ -1,0 +1,8 @@
+{
+  "name": "AnyKeyCompanion",
+  "description": "AnyKeyCompanion Description",
+  "uuid": "anykeycompanion@datenpirat",
+  "shell-version": [
+    "40"
+  ]
+}
